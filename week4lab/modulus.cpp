@@ -11,7 +11,21 @@ using namespace std;
 //define the main() function/method
 int main()
 {
-    std::cout << "placeholder" << std::endl;
+    int val = 0;
+
+    std::cin >> val;
+
+    string modcheck = "Error";
+    int mod = val % 2;
+    if (mod == 0){
+        modcheck = "even";
+    }
+    if (mod == 1){
+        modcheck = "odd";
+    }
+
+    std::cout << "this number is: ";
+    std::cout << modcheck << std::endl;
 
     return 0;
 }
