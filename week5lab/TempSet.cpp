@@ -11,7 +11,12 @@ using namespace std;
 //define the main() function/method
 int main()
 {
-    std::cout << "placeholder" << std::endl;
+    float input = 0;
+    float targTemp = 212.34;
+    while (input != targTemp){
+        std::cin >> input;
+    }
+    std::cout << "The temperature has been successfully set, thank you." << std::endl;
 
     return 0;
 }

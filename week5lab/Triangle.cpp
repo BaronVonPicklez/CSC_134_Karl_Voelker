@@ -12,10 +12,11 @@ using namespace std;
 //define the main() function/method
 int main()
 {
-    double ThetaR = atan2(4,3);
-    double ThetaD = (ThetaR/(2*3.141592653589793))*360;
+    float ThetaR = atan2(4,3);
+    float ThetaD = (ThetaR/(2*3.141592653589793))*360;
+    float targDeg = 53.1301;
     std::cout << ThetaD << std::endl;
-    if (ThetaD == 53.1301){
+    if (ThetaD == targDeg){
         std::cout << "this is a 3-4-5 triangle" << std::endl;
     }
     else {

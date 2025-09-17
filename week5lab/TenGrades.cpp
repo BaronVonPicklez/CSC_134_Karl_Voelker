@@ -11,7 +11,16 @@ using namespace std;
 //define the main() function/method
 int main()
 {
-    std::cout << "placeholder" << std::endl;
+    float input = 0;
+    float avg = 0;
+    float x = 0;
+    while (x < 10){
+        std::cin >> input;
+        avg = avg + input;
+        x++;
+    }
+    avg = avg / 10;
+    std::cout << avg << std::endl;
 
     return 0;
 }

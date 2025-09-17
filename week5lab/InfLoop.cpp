@@ -11,7 +11,10 @@ using namespace std;
 //define the main() function/method
 int main()
 {
-    std::cout << "placeholder" << std::endl;
+    int x = 2;
+    while (x = 2) {
+        std::cout << "this is infinite\n" << std::endl;
+    }
 
     return 0;
 }
