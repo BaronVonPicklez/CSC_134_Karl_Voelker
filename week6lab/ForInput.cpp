@@ -11,8 +11,12 @@ using namespace std;
 //define the main() function/method
 int main()
 {
-    for ()
-    std::cout << "placeholder" << std::endl;
+    int y = 0;
+    std::cin >> y;
+    for (int x = 0; x < y; x++){
+        std::cout << x << std::endl;
+    }
+    std::cout << "Complete" << std::endl;
 
     return 0;
 }

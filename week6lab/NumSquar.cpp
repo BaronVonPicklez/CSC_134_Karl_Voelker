@@ -11,7 +11,15 @@ using namespace std;
 //define the main() function/method
 int main()
 {
-    std::cout << "placeholder" << std::endl;
+    std::cout << "Number | Number Squared" << std::endl;
+    std::cout << "-----------------------" << std::endl;
+    for (int x = 0; x <= 100; x++){
+        int x2 = (x * x);
+        std::cout << x;
+        std::cout << " | ";
+        std::cout << x2 << std::endl;
+    }
+    std::cout << "Complete" << std::endl;
 
     return 0;
 }

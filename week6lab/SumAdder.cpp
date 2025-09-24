@@ -11,7 +11,13 @@ using namespace std;
 //define the main() function/method
 int main()
 {
-    std::cout << "placeholder" << std::endl;
+    int sumOp = 0;
+    int adder = 10;
+    for (int x = 0; x < 50; x++){
+        sumOp = sumOp + (x + adder);
+        std::cout << sumOp << std::endl;
+    }
+    std::cout << "Complete" << std::endl;
 
     return 0;
 }

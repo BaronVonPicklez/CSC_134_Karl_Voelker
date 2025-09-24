@@ -11,7 +11,13 @@ using namespace std;
 //define the main() function/method
 int main()
 {
-    std::cout << "placeholder" << std::endl;
+    int accumulator = 0;
+    for (int x = 0; x <= 100; x++){
+        std::cout << x << std::endl;
+        accumulator++;
+    }
+    std::cout << "The Accumulator value is ";
+    std::cout << accumulator << std::endl;
 
     return 0;
 }

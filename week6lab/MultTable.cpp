@@ -11,7 +11,13 @@ using namespace std;
 //define the main() function/method
 int main()
 {
-    std::cout << "placeholder" << std::endl;
+    int input = 0;
+    std::cin >> input;
+    for (int x = 0; x <= 12; x++){
+        int tableVal = input * x;
+        std::cout << tableVal << std::endl;
+    }
+    std::cout << "Complete" << std::endl;
 
     return 0;
 }
