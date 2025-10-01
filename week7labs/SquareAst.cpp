@@ -13,14 +13,14 @@ int main()
 {
     int input = 0;
     std::cin >> input;
-    for (int x = 1; x <= 10; x++){
-        for (int innerx = 1; innerx <= 10; innerx++){
+    for (int x = 1; x <= input; x++){
+        for (int innerx = 1; innerx <= input; innerx++){
             std::cout << "*";
             std::cout << "\t";
         }
         std::cout << "" << std::endl;
     }
-    std::cout << "placeholder" << std::endl;
+    std::cout << "" << std::endl;
 
     return 0;
 }
