@@ -12,9 +12,9 @@ using namespace std;
 //define the main() function/method
 int main()
 {
-    fstream inputFile;
-    inputFile.open("placeholder.txt");
-    inputFile.close();
+    ofstream outputFile;
+    outputFile.open("placeholder.txt");
+    outputFile.close();
 
     std::cout << "placeholder" << std::endl;
     return 0;

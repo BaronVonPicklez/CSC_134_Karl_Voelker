@@ -12,10 +12,19 @@ using namespace std;
 //define the main() function/method
 int main()
 {
-    fstream inputFile;
-    inputFile.open("placeholder.txt");
-    inputFile.close();
+    string Friend1 = "";
+    string Friend2 = "";
+    string Friend3 = "";
+    std::cin >> Friend1;
+    std::cin >> Friend2;
+    std::cin >> Friend3;
+    ofstream outputFile;
+    outputFile.open("lab5.txt");
+    outputFile << Friend1 <<endl;
+    outputFile << Friend2 <<endl;
+    outputFile << Friend3 <<endl;
+    outputFile.close();
 
-    std::cout << "placeholder" << std::endl;
+    std::cout << "complete" << std::endl;
     return 0;
 }

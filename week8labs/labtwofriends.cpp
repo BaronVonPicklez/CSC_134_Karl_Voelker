@@ -12,10 +12,14 @@ using namespace std;
 //define the main() function/method
 int main()
 {
-    fstream inputFile;
-    inputFile.open("placeholder.txt");
+    string text = "";
+    bool notdone = true;
+    ifstream inputFile;
+    inputFile.open("friends.txt");
+    while (inputFile >> text){
+        cout << text << " "; 
+    }
     inputFile.close();
-
-    std::cout << "placeholder" << std::endl;
+    std::cout << "complete" << std::endl;
     return 0;
 }

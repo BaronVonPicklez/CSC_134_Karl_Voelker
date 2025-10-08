@@ -12,10 +12,15 @@ using namespace std;
 //define the main() function/method
 int main()
 {
-    fstream inputFile;
-    inputFile.open("placeholder.txt");
-    inputFile.close();
+    int input = 0;
+    std::cin >> input;
+    ofstream outputFile;
+    outputFile.open("lab4.txt");
+    for (int x = 0; x < input; x++){
+        outputFile << x <<endl;
+    }
+    outputFile.close();
 
-    std::cout << "placeholder" << std::endl;
+    std::cout << "Done Writing...." << std::endl;
     return 0;
 }

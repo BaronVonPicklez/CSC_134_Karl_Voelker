@@ -12,10 +12,18 @@ using namespace std;
 //define the main() function/method
 int main()
 {
-    fstream inputFile;
-    inputFile.open("placeholder.txt");
+    int text = 0;
+    int sum = 0;
+    bool notdone = true;
+    ifstream inputFile;
+    inputFile.open("numbers.txt");
+    while (inputFile >> text){
+        cout << text << " "; 
+        sum = sum + text;
+    }
     inputFile.close();
-
-    std::cout << "placeholder" << std::endl;
+    std::cout << "" << std::endl;
+    std::cout << sum << std::endl;
+    std::cout << "complete" << std::endl;
     return 0;
 }

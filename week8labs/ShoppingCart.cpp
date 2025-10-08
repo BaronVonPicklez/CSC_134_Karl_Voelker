@@ -12,10 +12,17 @@ using namespace std;
 //define the main() function/method
 int main()
 {
-    fstream inputFile;
-    inputFile.open("placeholder.txt");
-    inputFile.close();
+    ofstream outputFile;
+    outputFile.open("lab2.txt");
+    outputFile << "*************************************" <<endl;
+    outputFile << "\t\t\t Shopping Cart" <<endl;
+    outputFile << "*************************************" <<endl;
+    outputFile << "product code \tqty\t\tprice" <<endl;
+    outputFile << "\t789\t\t\t7\t\t$12.00" <<endl;
+    outputFile << "" <<endl;
+    outputFile << "\t\t\t\t\t\tTotal: $84.00" <<endl;
+    outputFile.close();
 
-    std::cout << "placeholder" << std::endl;
+    std::cout << "complete" << std::endl;
     return 0;
 }
