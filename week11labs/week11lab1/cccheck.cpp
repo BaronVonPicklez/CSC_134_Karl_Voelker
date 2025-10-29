@@ -4,6 +4,12 @@
 
 //include the iostream directive.
 #include <iostream>
+#include <fstream>
+#include <iomanip>
+#include <sstream>
+#include <algorithm>
+#include <string>
+
 
 //use the standard namespace
 using namespace std;
@@ -16,6 +22,33 @@ using namespace std;
 //define the main() function/method
 int main()
 {
+    int size = 16;
+    int CCN[size] = {4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+    int reverseCardNum[size] = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4};
+    int mod10num = 0;
+    int checkdig = 0;
+    for(int index = 1; index <= 16; index += 2){
+        reverseCardNum[index] = reverseCardNum[index] * 2;
+    }
+    for(int i = 0; i < reverseCardNum.length(); i++){
+        mod10num = reverseCardNum[i] + mod10num;
+    }
+    checkdig = mod10num % 10;
+    if(checkdig == 0){
+        std::cout << "Credit card ";
+        for(int L = 0; L < CCN.length(); L++){
+            std::cout << CCN[L];
+        }
+        std::cout << " is Valid." << std::endl;
+    }
+    else{
+        std::cout << "Credit card ";
+        for(int C = 0; C < CCN.length(); C++){
+            std::cout << CCN[C];
+        }
+        std::cout << " is NOT Valid." << std::endl;
+    }
+            
     std::cout << "placeholder" << std::endl;
 
     return 0;

@@ -12,19 +12,30 @@ using namespace std;
 //define the main() function/method
 int main()
 {
+    int count = 0;
     int sale = 0;
     int loop = 0;
+    int counter = 0;
+    int sum = 0;
     bool notdone = true;
     ifstream inputFile;
+    ifstream inputFile2;
     inputFile.open("sales.txt");
-    int size = inputFile;
+    inputFile2.open("sales.txt");
+    while(inputFile >> count){
+        counter++;
+    }
+    int size = counter;
     int sales[size];
-    while (inputFile >> sale){
-        cout << sale; 
+    while (inputFile2 >> sale){
         sales[loop] = sale;
         loop++;
     }
     inputFile.close();
-    std::cout << "complete" << std::endl;
+    inputFile2.close();
+    for (int x = 0; x < size; x++){
+        sum = sum + sales[x];
+    }
+    std::cout << sum << std::endl;
     return 0;
 }
