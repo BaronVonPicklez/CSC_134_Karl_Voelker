@@ -30,20 +30,20 @@ int main()
     for(int index = 1; index <= 16; index += 2){
         reverseCardNum[index] = reverseCardNum[index] * 2;
     }
-    for(int i = 0; i < reverseCardNum.length(); i++){
+    for(int i = 0; i < size; i++){
         mod10num = reverseCardNum[i] + mod10num;
     }
     checkdig = mod10num % 10;
     if(checkdig == 0){
         std::cout << "Credit card ";
-        for(int L = 0; L < CCN.length(); L++){
+        for(int L = 0; L < size; L++){
             std::cout << CCN[L];
         }
         std::cout << " is Valid." << std::endl;
     }
     else{
         std::cout << "Credit card ";
-        for(int C = 0; C < CCN.length(); C++){
+        for(int C = 0; C < size; C++){
             std::cout << CCN[C];
         }
         std::cout << " is NOT Valid." << std::endl;
