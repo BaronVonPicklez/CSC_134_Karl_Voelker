@@ -1,6 +1,6 @@
 //@author: Karl Voelker
 //@date: 8/27/2025
-//@purpose: this program.
+//@purpose: this program writes a shopping cart to a file.
 
 //include the iostream directive.
 #include <iostream>

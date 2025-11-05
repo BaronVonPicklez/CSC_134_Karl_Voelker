@@ -1,6 +1,6 @@
 //@author: Karl Voelker
 //@date: 8/27/2025
-//@purpose: this program.
+//@purpose: this program writes sales to a file and then sums them.
 
 //include the iostream directive.
 #include <iostream>

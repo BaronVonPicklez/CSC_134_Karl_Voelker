@@ -1,6 +1,6 @@
 //@author: Karl Voelker
 //@date: 8/27/2025
-//@purpose: this program.
+//@purpose: this program counts to a number.
 
 //include the iostream directive.
 #include <iostream>

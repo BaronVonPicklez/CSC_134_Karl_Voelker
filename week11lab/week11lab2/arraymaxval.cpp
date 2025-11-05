@@ -1,6 +1,6 @@
 //@author: Karl Voelker
 //@date: 8/27/2025
-//@purpose: this program.
+//@purpose: this program finds the max value of an array.
 
 //include the iostream directive.
 #include <iostream>
