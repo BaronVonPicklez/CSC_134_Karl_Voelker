@@ -18,6 +18,7 @@ int main()
     int yax = 0;
     int yar = 16;
     int loop = 0;
+    int loop2 = 0;
     int ypoints = 0;
     int count = 4;
     while (yax <= 16){
@@ -40,6 +41,7 @@ int main()
     }
     while (y2 <= 4){
         y[y2] = (m * x[y2]) + b;
+        std::cout << y[y2] << std::endl;
         y2++;
     }
     while (yar >= 0){
@@ -47,16 +49,13 @@ int main()
         yar--;
         loop++;
     }
-    int table[16][16];
     
-    
-    for (int pos:revyaxis){
-        std::cout << yaxis[pos];
+    while (loop2 <= 16){
+        std::cout << revyaxis[loop2];
         std::cout << "|";
-        std::cout << y[pos];
-        if (table[pos] == pos){
+        if (revyaxis[loop2] == y[4] || revyaxis[loop2] == y[3] || revyaxis[loop2] == y[2] || revyaxis[loop2] == y[1] || revyaxis[loop2] == y[0]){
             for (int tabs = count; tabs >= 0; tabs--){
-                std::cout << "   ";
+                std::cout << "  ";
             }
             count--;
             std::cout << "X" << std::endl;
@@ -64,7 +63,12 @@ int main()
         else{
             std::cout << "" << std::endl;
         }
+        loop2++;
     }
+    for (int pos:xaxis){
+        std::cout << pos << "|";
+    }
+    std::cout << "" << std::endl;
 
     //std::cout << yaxis[3] << std::endl;
     //std::cout << xaxis[8] << std::endl;
