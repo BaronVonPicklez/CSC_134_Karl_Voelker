@@ -1,6 +1,6 @@
 //@author: Karl Voelker
 //@date: 8/27/2025
-//@purpose: this program.
+//@purpose: this program is tictactoe.
 
 //include the iostream directive.
 #include <iostream>
@@ -169,10 +169,31 @@ int main()
         else{
             iteration = iteration + 1;
         }
-        if(top[0] == center[1] && top[0] == bottom[2]){
+        //diagonal checks:
+        if(top[0] == center[1] && top[0] == bottom[2] && top[0] != "   "){
             win = true;
         }
-        if(top[2] == center[1] && top[2] == bottom[0]){
+        if(top[2] == center[1] && top[2] == bottom[0] && top[2] != "   "){
+            win = true;
+        }
+        //row checks:
+        if(top[0] == top[1] && top[0] == top[2] && top[0] != "   "){
+            win = true;
+        }
+        if(center[0] == center[1] && center[0] == center[2] && center[0] != "   "){
+            win = true;
+        }
+        if(bottom[0] == bottom[1] && bottom[0] == bottom[2] && bottom[0] != "   "){
+            win = true;
+        }
+        //column checks:
+        if(top[0] == center[0] && top[0] == bottom[0] && top[0] != "   "){
+            win = true;
+        }
+        if(top[1] == center[1] && top[1] == bottom[1] && top[1] != "   "){
+            win = true;
+        }
+        if(top[2] == center[2] && top[2] == bottom[2] && top[2] != "   "){
             win = true;
         }
         //testloop = testloop + 1;
@@ -180,7 +201,7 @@ int main()
             //win = true;
         //}
     }
-    std::cout << "Here is the Winning Game Board:" << std::endl;
+    std::cout << "Here is the Final Game Board:" << std::endl;
     std::cout << top[0] << "|" << top[1] << "|" << top[2] << std::endl;
     std::cout << "-----------" << std::endl;
     std::cout << center[0] << "|" << center[1] << "|" << center[2] << std::endl;
