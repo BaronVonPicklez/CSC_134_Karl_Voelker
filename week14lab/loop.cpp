@@ -7,7 +7,7 @@
 
 //use the standard namespace
 using namespace std;
-int input = 0;
+double input = 0;
 int x = 0;
 bool valid = false;
 int loop(int input){
